@@ -59,7 +59,7 @@ M.create_bloc = function()
 
     -- Get the current buffer's path
     local buf_directory = util.get_current_buffer_path()
-    buf_directory = buf_directory .. "bloc/" .. snake_case_bloc_name .. "_bloc/"
+    buf_directory = buf_directory .. snake_case_bloc_name .. "_bloc/"
 
     -- Get bloc path from user
     local bloc_path = vim.fn.input("Bloc path: ", buf_directory)
